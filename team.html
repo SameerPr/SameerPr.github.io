@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset='utf-8'>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="team.css" >
+  <title>Team</title>
+   <link rel="icon" href="team-logo.png" type="image/png">
+<script type="text/javascript">
+
+function startTime(){
+
+   date = new Date;
+   year = date.getFullYear();
+   month = date.getMonth();       
+   d = date.getDate();
+   h = date.getHours();
+   if (h<10) { h = "0" + h ;}
+   m = date.getMinutes();
+   if (m<10) { m= "0" + m ;}  
+   s= date.getSeconds();
+   if (s<10) { s= "0" + s ;}
+
+   result = ''+d+'/'+month+ '/'+ year +' '+h+':'+m+':'+s;
+   document.getElementById('txt').innerHTML = result ;
+   setTimeout(startTime , 500 );
+   return true;
+} 
+
+</script>
+
+</head>
+<body class="bgimg" onload="startTime()">
+<div class="topbar">
+<h2 id="name">Team- Access Denied</h2>
+</div>
+<div>
+ <ul id="cssmenu">
+    <li class='active'><a href="team.html">CS 251 Team-Home</a></li>
+    <li><a href="#">CS 251 Team-Info</a></li>       
+</ul>
+</div><!--cssmenu end-->
+<div style="margin-top: 60px;">
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="teamimg/teamimg1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Chaw Akameta Enling</h2>
+        <p class="title">170050054</p>
+        <p><button class="button"><a href="https://www.cse.iitb.ac.in/~akametta/homepage.html">Visit Site</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="teamimg/teamimg2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Sameer Prajapati</h2>
+        <p class="title">170050061</p>
+        <p><button class="button"><a href="https://www.cse.iitb.ac.in/~sameercse/index.html">Visit Site</a></button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="teamimg/teamimg3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Anil Kumar</h2>
+        <p class="title">170050076</p>
+        <p><button class="button"><a href="https://www.cse.iitb.ac.in/~anilkumarnakka/index.html">Visit Site</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+  <div style="text-align: center;">
+   <div id="txt"></div> 
+  </div>
+  </div>
+</body>
+</html>
