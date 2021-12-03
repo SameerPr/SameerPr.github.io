@@ -1,118 +1,513 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset='utf-8'>
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styling.css" >
-  <title>SAMEER PRAJAPATI</title>
-   <link rel="icon" href="batman.png" type="image/png">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Prajapati</title>
+    <link rel="icon" href="assets/images/my-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shorthandcss@1.1.1/dist/shorthand.min.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Muli:200,300,400,500,600,700,800,900&display=swap"/>
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 99;
+            font-size: 10px;
+            border: cadetblue;
+            outline: aquamarine;
+            background: none;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 5px;
+        }
 
+        #myBtn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
-<body class="bgimg">
 
-<div class="topbar">
-<h2 id="name-home">Sameer Prajapati</h2>
-</div>
-<div>
- <ul id="cssmenu">
-        <li class='active'><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Me</a></li>
-        <li><a href="academics.html">Academics</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact Me</a></li>
+<body class="bg-slategray-darkest muli">
 
-</ul>
-</div><!--cssmenu end-->
+<!-- Nav bar section -->
+<nav class="w-100pc flex flex-column md-flex-row md-px-10 py-5">
+    <div class="flex justify-between">
+        <div href="#" class="flex items-center p-2 mr-4 no-underline">
+            <img alt="logo" class="max-h-l3 w-auto" src="assets/images/my-logo.png"/>
+        </div>
+        <a data-toggle="toggle-nav" data-target="#nav-items" href="#"
+           class="flex items-center ml-auto md-hidden indigo opacity-50 hover-opacity-100 ease-300 p-1 m-3">
+            <i data-feather="menu"></i>
+        </a>
+    </div>
+    <div id="nav-items" class="hidden flex sm-w-100pc flex-column md-flex md-flex-row md-justify-end items-center">
+        <a href="#home"
+           class="fs-m1 mx-3 py-3 indigo no-underline hover-underline hover-block hover-scale-up-1 ease-300">Home</a>
+        <a href="#about"
+           class="fs-m1 mx-3 py-3 indigo no-underline hover-underline hover-block hover-scale-up-1 ease-300">About</a>
+        <a href="#Projects"
+           class="fs-m1 mx-3 py-3 indigo no-underline hover-underline hover-block hover-scale-up-1 ease-300">Projects</a>
+        <a href="#" class="fs-m1 mx-3 py-3 indigo no-underline hover-underline hover-rotate-2 ease-300">Resume</a>
+        <a href="#Contact"
+           class="fs-m1 mx-3 py-3 indigo no-underline hover-underline hover-block hover-scale-up-1 ease-300">Contact</a>
+    </div>
+</nav>
 
-<div class="w3-container">
+<!-- name section -->
+<section id="home" class="min-h-100vh flex flex-column md-flex-row mt-1 items-center">
+    <div class="w-100pc md-w-70pc">
+        <div class="mx-7 md-mx-l7">
+            <div class="slategray-light fw-900 fs-l1 mb-5">
+                <h5>
+                    Hey There! <span class="wave">👋🏻</span>
+                </h5>
+            </div>
+            <div>
+                <h1 class="gray-light fs-l3 fw-900 "> I'm Sameer Prajapati
+                </h1>
+                <br>
+                <h1>
+                    <a href="" class="typewrite slategray-light no-underline" data-period="1000"
+                       data-type='["Developer","Movie Lover","I Love to Hack :)"]'>
+                        <span class="wrap"></span>
+                    </a>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="w-80pc md-w-40pc m-l2">
+        <img class="img-fluid rounded br-20 bw-18 w-90pc border-slategray-darkest" src="assets/images/animation.gif"
+             alt="home pic">
+    </div>
+</section>
 
-<div id="intro">
-<p><h3><i onclick="document.getElementById('id01').style.display='block'">Hello There. I am Sameer</i></h3></p>
-<p><h4><i onclick="document.getElementById('id01').style.display='block'">CSE sophomore in IITB.</i></h4></p>
-<p class="h8" onclick="document.getElementById('id01').style.display='block'">Click to know more</p></div>
+<!--About features -->
+<section id="about" class="min-h-100vh p-10 md-p-l5 bg-slategray-darker">
+    <div class="mint-dark text-center">
+        <div><h1>About Me</h1></div>
+    </div>
+    <div class="flex flex-column md-flex-row mx-auto items-center">
+        <div class="flex-row w-40pc xl-self-auto">
+            <img src="assets/images/profile.gif" alt="Avatar"
+                 class="img-fluid rounded br-16 bw-12 hover-bc-blue-dark
+                        opacity-60 hover-opacity-100">
+        </div>
+        <div class="flex-row w-120pc mt-3 text-justify">
+            <div class="md-mx-10 md-w-70pc">
+                <div class="teal-lighter fw-100 md-fs-m1 fs-s1 opacity-90">
+                    I completed my bachelor's degree in computer science from IIT Bombay in May 2021.
+                    Working on many projects have allowed me to put what I've learned in the classroom to use in a
+                    practical sense.
+                    <br/>
+                    <br/>
+                    I tend to get involved in places where I'm not technically strong but always wish to learn something
+                    which I'm not good at and try to figure out my strengths, and let me tell you.
+                    It gives me immense pleasure. <br/>
+                    I am a fan of the idea of automation and always have been passionate
+                    about creating technologies that could make a more significant difference.
+                    <br/>
+                    <br/>
+                    I love exploring new places and always want to go to some new place. Being a cinema fan,
+                    I love exploring movie genres and the magical creations of some artists.
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="items-center mt-5">
+        <div class="text-center white fw-300 md-fs-m1 fs-s1 opacity-90">Some skills that I have worked on</div>
+        <div>
+            <ul class="white flex flex-wrap flex-row mt-5 md-ml-l10 ml-l1 fw-300 md-fs-m1 fs-s1">
+                <li class="md-w-30pc w-40pc">C/C++</li>
+                <li class="md-w-30pc w-40pc">Python</li>
+                <li class="md-w-30pc w-40pc">Java</li>
+                <li class="md-w-30pc w-40pc">Golang</li>
+                <li class="md-w-30pc w-40pc">Javascript</li>
+                <li class="md-w-30pc w-40pc">Postgres/Sqlite</li>
+                <li class="md-w-30pc w-40pc">SpringBoot</li>
+                <li class="md-w-30pc w-40pc">Django</li>
+                <li class="md-w-30pc w-40pc">React/Express</li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-<div id="id01" class="w3-modal">
- <div class="w3-modal-content w3-card-4 w3-animate-zoom">
-  <header class="w3-container w3-dark-grey"> 
-   <span onclick="document.getElementById('id01').style.display='none'" 
-   class="w3-button w3-dark-grey w3-xlarge w3-display-topright">&times;</span>
-   <h2>A few Lines</h2>
-  </header>
+<!-- Intern and projects -->
+<section id="Projects" class="p-0 md-p-5">
+    <div class="white ml-8 mt-5">
+        <h3> Internship Experiences </h3>
+    </div>
+    <div class="flex flex-wrap">
+        <div class="w-100pc md-w-40pc pl-3 pr-3 md-mt-4 mt-2 md-ml-l4">
+            <div class="no-underline p-7 br-8  hover-shift-t-8 ease-300">
+                <div class="fw-400 white fs-m2">
+                    Data Science Intern @ TCS
+                </div>
+                <p class="fw-100 white fs-s3">
+                    May 2020 - July 2020
+                </p>
+                <ul class="list-square fw-100 white fs-s1 mt-3 text-justify">
+                    <li>Devised a multi-platform python program to fetch and log all user activities on application
+                        level
+                    </li>
+                    <li>Transferred generated log files using RabbitMQ software for collecting data to be used in the
+                        model
+                    </li>
+                    <li>Trained LSTM model using Keras to predict user's next best action based on previous actions</li>
+                </ul>
+                <div class="fw-100 white fs-s2 mt-4 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                    <span class="ml-8"><i class="fas fa-code"></i>&nbsp; Keras</span>
+                </div>
+            </div>
+        </div>
+        <div class="w-100pc md-w-40pc pl-3 pr-3 md-mt-4 mt-2 md-ml-l4">
+            <div class="no-underline p-7 br-8 hover-shift-t-8 ease-300">
+                <div class="fw-400 white fs-m2">
+                    Project Associate @ CyberInc
+                </div>
+                <p class="fw-100 white fs-s3">
+                    Dec 2019 - Jan 2020
+                </p>
+                <ul class="list-arrow fw-100 white fs-s1 mt-3 text-justify">
+                    <li>Developed a multi-threaded program to generate the dataset for valid typosquatted versions of
+                        top urls
+                    </li>
+                    <li>Researched and feature engineered to build a url maliciousness score prediction model</li>
+                    <li>Analyzed various regression models to find best performing model based on the evaluation
+                        matrix
+                    </li>
+                </ul>
+                <div class="fw-100 white fs-s2 mt-4 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; SciPy</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="white ml-8 mt-5">
+        <h3> Some Course Projects </h3>
+    </div>
+    <div class="flex flex-wrap text-justify">
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 md-ml-l4">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/linux-container.jpg" alt="">
+                <div class="fw-400 white fs-m2">
+                    Linux Container
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Virtualization
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Developed a tool to create containerized environments using Namespace and Cgroups with resource
+                    limits and virtual networks
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Linux</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; C++</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 ">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/cloud.jpg" alt="">
+                <div class="fw-400 white fs-m2">
+                    Secure Personal Cloud
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Software System Labs
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Designed a local Cloud based file storage system capable of handling multiple clients with file
+                    encryptions
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Django</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; SQLite</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 ">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/music-classifier.jpg" alt="">
+                <div class="fw-400 white fs-m2">
+                    Music Genre Classifier
+                </div>
+                <p class="fw-200 white fs-s3">
+                    AI&ML
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Built a Classifier to categorise music into various genres using K-means & CNN by utilising there
+                    MFCC features
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; Scipy</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 md-ml-l4">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/sudoku.jpg" alt="">
+                <div class="fw-400 white fs-m2">
+                    Parallel Sudoku Solver
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Scientific Computing
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Developed a sequential sudoku solver for NxN grid and parallelized it with OpenMP & MPI to study
+                    their performances
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; C++</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; OpenMP / MPI</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100" src="assets/images/RSA.jpg"
+                     alt="">
+                <div class="fw-400 white fs-m2">
+                    Multi Prime RSA
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Advance Network Security
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Studied the security and performance of Multi prime RSA along with Implementing low private exponent
+                    B-D Lattice attack on 3-prime RSA
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; Sage</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/ping-pong.jpg" alt="">
+                <div class="fw-400 white fs-m2 ">
+                    Ping Pong Game
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Abstractions and Paradigms
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Devised single & multiplayer version of ping-pong game implementing collision responses at different
+                    angles and gravity
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Racket</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 md-ml-l4 moreBox hide">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/fingerprint.jpg" alt="">
+                <div class="fw-400 white fs-m2 ">
+                    FingerPrint Recognition
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Digital Image Processing
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Implemented phase based image matching for low quality fingerprints and improvised it using Band
+                    Limited POC to get better ROC curve
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; MATLAB</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 moreBox hide">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100"
+                     src="assets/images/compiler.jpg" alt="">
+                <div class="fw-400 white fs-m2">
+                    Compiler For C
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Implementation of Prog. Lang.
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Created a compiler and evaluator for subset of C supporting functions and control sequences using
+                    Lex and Yacc
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Linux</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; C</span>
+                </div>
+            </a>
+        </div>
+        <div class="w-100pc md-w-30pc mt-4 pl-8 md-pl-2 pr-8 md-pr-2 moreBox hide">
+            <a class="block no-underline bg-slategray-darker-90 p-6 br-8  hover-shift-t-8 ease-300">
+                <img class="w-100pc bg-slategray-darker h-l10 opacity-70 hover-opacity-100" src="assets/images/xv6.jpg"
+                     alt="">
+                <div class="fw-400 white fs-m2">
+                    Features of XV6
+                </div>
+                <p class="fw-200 white fs-s3">
+                    Operating System
+                </p>
+                <p class="fw-100 white fs-s1 mt-3">
+                    Explored process scheduling algorithms in xv6 source code, implementing Memory management techniques
+                    and pthreads use
+                </p>
+                <div class="fw-100 white fs-s2 mt-3 m-1vh">
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Linux</span>
+                    <span class="ml-10"><i class="fas fa-code"></i>&nbsp; C</span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="block text-center mt-3 mb-5">
+        <a href="" id="loadMore" class="fs-s1 mx-3 py-3 indigo no-underline">Show More</a>
+        <a href="" id="loadLess" class="fs-s1 mx-3 py-3 indigo no-underline hide">Show Less</a>
+    </div>
+</section>
 
-  <div class="w3-container city">
-   <p>I belong to Sidhi district of Madhya Pradesh. 
-   </p>
-   <p>I completed my higher studies in Jnv Bundi and jee preparation in kota .</p>
-   <p></p>
-  </div>
+<!-- Move to top button-->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i data-feather="navigation-2"></i></button>
 
-  <div class="w3-container w3-light-grey w3-padding">
-   <button class="w3-button w3-right w3-white w3-border" 
-   onclick="document.getElementById('id01').style.display='none'">Close</button>
-  </div>
- </div>
-</div>
+<!-- Contact -->
+<!--<footer id="Contact" class="p-5 md-p-l5 bg-gray">-->
+<!--    <div class="flex flex-wrap">-->
+<!--        <div class="w-100pc md-w-50pc">-->
+<!--            <div class="flex justify-around">-->
+<!--                <div class="w-25pc mb-10">-->
+<!--                    <a href="#home" class="white opacity-70 no-underline hover-underline">Home</a>-->
+<!--                </div>-->
+<!--                <div class="w-25pc mb-10">-->
+<!--                    <a href="#about" class="white opacity-70 no-underline hover-underline">About me</a>-->
+<!--                </div>-->
+<!--                <div class="w-25pc mb-10">-->
+<!--                    <a href="#Projects" class="white opacity-70 no-underline hover-underline">Projects</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="w-100pc md-w-50pc">-->
+<!--            <div class="flex justify-around md-w-50pc md-m-auto">-->
+<!--                <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i-->
+<!--                        data-feather="linkedin" class="absolute-center h-4"></i></a>-->
+<!--                <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i-->
+<!--                        data-feather="facebook" class="absolute-center h-4"></i></a>-->
+<!--                <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i-->
+<!--                        data-feather="instagram" class="absolute-center h-4"></i></a>-->
+<!--                <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i-->
+<!--                        data-feather="github" class="absolute-center h-4"></i></a>-->
+<!--            </div>-->
+<!--            <p class="copyright">Company Name © 2018</p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->
 
-</div>
-<script>
-var modal = document.getElementById('id01');
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-   }
-}
-</script>
 
-<div class="container">
-  <br>
-<marquee><i class="picture">These are My pictures</i></marquee> 
-<br /><br />
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <!-- <li data-target="#myCarousel" data-slide-to="1"></li> -->
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="img/img1.jpg" alt="Chania" style="width: 460; height: 345;">
-      </div>
-
-      <!-- <div class="item">
-        <img src="img/img3.jpg" alt="Chania" style="width: 450; height: 345;" >
-      </div> -->
-    
-      <div class="item">
-        <img src="img/img2.jpg" alt="Flower" style="width: 460; height: 345;">
-      </div>
-
-      <div class="item">
-        <img src="img/img4.jpg" alt="Flower" style="width: 460; height: 345;">
-      </div>
-  
+<footer class="footer-distributed bg-black-30">
+    <div class="footer-left">
+        <p class="footer-links fs-s1 gray-light">
+            <a class="link-1" href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact me</a>
+        </p>
+        <p class="gray-light fs-s2 p-5">Made By Sameer Prajapati &copy; 2021</p>
     </div>
 
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
+    <div class="footer-center text-justify">
+        <div class="m-2">
+            <span class="p-5 br-round white"><i data-feather="phone"></i></span>
+            <p>+91 9131199XXX</p>
+        </div>
+        <div class="m-2">
+            <span class="p-5 br-round white"><i data-feather="mail"></i></span>
+            <p><a href="mailto:sameerprajapati84@gmail.com">sameerprajapati84@gmail.com</a></p>
+        </div>
+        <div class="m-2">
+            <span class="p-5 br-round white"><i data-feather="map-pin"></i></span>
+            <p>Madhya Pradesh, India </p>
+        </div>
+    </div>
 
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span class="mt-5">You can connect with me here. </span>
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.linkedin.com/in/sameer-prajapati-992268157/"
+               class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
+                    data-feather="linkedin" class="absolute-center h-4"></i></a>
+            <a href="https://github.com/SameerPr"
+               class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
+                    data-feather="github" class="absolute-center h-4"></i></a>
+            <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
+                    data-feather="facebook" class="absolute-center h-4"></i></a>
+            <a href="#" class="relative p-5 bg-indigo br-round white hover-scale-up-1 ease-400"><i
+                    data-feather="instagram" class="absolute-center h-4"></i></a>
+        </div>
+    </div>
+</footer>
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/feather-icons"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/typewrite.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#loadMore").on('click', function (e) {
+            e.preventDefault();
+            $(".moreBox:hidden").slice(0, 3).slideDown();
+            $("#loadMore").addClass('hide');
+            $("#loadLess").removeClass('hide');
+        });
+
+        $("#loadLess").on('click', function (e) {
+            e.preventDefault();
+            $(".moreBox").slice(0, 3).slideUp();
+            $("#loadLess").addClass('hide');
+            $("#loadMore").removeClass('hide');
+        });
+
+    });
+</script>
+<script type="text/javascript">
+    const Button = document.getElementById("myBtn");
+    window.onscroll = function () {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            Button.style.display = "block";
+        } else {
+            Button.style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+</script>
 </body>
+
 </html>
